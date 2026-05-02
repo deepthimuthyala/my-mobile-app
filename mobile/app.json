@@ -10,10 +10,36 @@
             "usesCleartextTraffic": true,
             "adaptiveIcon": {
                 "backgroundColor": "#1a1a2e"
-            }
+            },
+            "permissions": [
+                "CAMERA",
+                "READ_EXTERNAL_STORAGE",
+                "WRITE_EXTERNAL_STORAGE",
+                "ACCESS_FINE_LOCATION",
+                "ACCESS_COARSE_LOCATION"
+            ]
         },
         "ios": {
-            "supportsTablet": true
-        }
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSCameraUsageDescription": "We need camera access to capture product photos.",
+                "NSLocationWhenInUseUsageDescription": "We need your location to tag product submissions.",
+                "NSPhotoLibraryUsageDescription": "We need photo library access to select product images."
+            }
+        },
+        "plugins": [
+            [
+                "expo-camera",
+                {
+                    "cameraPermission": "Allow MyShopApp to access your camera to capture product photos."
+                }
+            ],
+            [
+                "expo-location",
+                {
+                    "locationAlwaysAndWhenInUsePermission": "Allow MyShopApp to use your location to tag product submissions."
+                }
+            ]
+        ]
     }
 }
