@@ -1,0 +1,19 @@
+{
+    "expo": {
+        "name": "MyShopApp",
+        "slug": "myshopapp",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "sdkVersion": "54.0.0",
+        "android": {
+            "package": "com.yourname.myshopapp",
+            "usesCleartextTraffic": true,
+            "adaptiveIcon": {
+                "backgroundColor": "#1a1a2e"
+            }
+        },
+        "ios": {
+            "supportsTablet": true
+        }
+    }
+}
